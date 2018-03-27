@@ -154,7 +154,7 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-calcCircleColorLegend([[50.0, 'rgb(255,255,204)'], [72.0, 'rgb(255,237,160)'], [88.0, 'rgb(254,217,118)'], [102.0, 'rgb(254,178,76)'], [120.0, 'rgb(253,141,60)'], [148.0, 'rgb(252,78,42)'], [215.0, 'rgb(227,26,28)'], [450.0, 'rgb(177,0,38)']], "Living space");
+calcCircleColorLegend([[1540.0, 'rgb(255,255,204)'], [1815.0, 'rgb(255,237,160)'], [1931.0, 'rgb(254,217,118)'], [1969.0, 'rgb(254,178,76)'], [1985.0, 'rgb(253,141,60)'], [2000.0, 'rgb(252,78,42)'], [2011.0, 'rgb(227,26,28)'], [9999.0, 'rgb(177,0,38)']], "Year built");
 
 map.on('style.load', function() {
     
@@ -191,7 +191,7 @@ map.on('style.load', function() {
         "maxzoom": 24,
         "minzoom": 0,
         "paint": {
-            "circle-color": generatePropertyExpression("interpolate", "Living space", [[50.0, 'rgb(255,255,204)'], [72.0, 'rgb(255,237,160)'], [88.0, 'rgb(254,217,118)'], [102.0, 'rgb(254,178,76)'], [120.0, 'rgb(253,141,60)'], [148.0, 'rgb(252,78,42)'], [215.0, 'rgb(227,26,28)'], [450.0, 'rgb(177,0,38)']], "grey" ),
+            "circle-color": generatePropertyExpression("interpolate", "Year built", [[1540.0, 'rgb(255,255,204)'], [1815.0, 'rgb(255,237,160)'], [1931.0, 'rgb(254,217,118)'], [1969.0, 'rgb(254,178,76)'], [1985.0, 'rgb(253,141,60)'], [2000.0, 'rgb(252,78,42)'], [2011.0, 'rgb(227,26,28)'], [9999.0, 'rgb(177,0,38)']], "grey" ),
             "circle-radius" : generatePropertyExpression('interpolate', 'zoom', [[0,1], [18,10]]),
             "circle-stroke-color": "white",
             "circle-stroke-width": generatePropertyExpression('interpolate', 'zoom', [[0,0.01], [18,1]]),
